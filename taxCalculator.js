@@ -20,7 +20,7 @@
       text-align: center;
  }
 
-  div.header:hover {
+   div.header:hover {
      background-color: 	#8B008B;
      border: 1px solid #111;
      color:#FFF;
@@ -59,6 +59,7 @@
      color: #FFF;
      border: 1px solid #111;
  }
+
     .submit {
        float: left;
        width: 15%;
@@ -67,42 +68,37 @@
        background-color: purple;
        color: #fff;
   }
-  div.submit:hover {
-     background-color: 	#8B008B;
-     color: #FFF;
-     border: 1px solid #111;
-  
-}
+
+    div.submit:hover {
+       background-color:#8B008B;
+       color: #FFF;
+       border: 1px solid #111;
+ }
+   
     #subutton {
-    font-size: 14px;
-    display: inline-block;
-    height: 23px;
-    width: 50px;
-    text-align: center;
-    color: #FFF;
-    background: #483D8B;
-    padding: 0;
-    border: 2px solid #8A2BE2;
-    border-radius: 3px;
-    border: 1px solid #07121b;
-    box-shadow: 0px 2px 0px #07121b;
-    text-shadow: 1px 1px 1px #07121b;
-    cursor: pointer;
+       font-size: 14px;
+       display: inline-block;
+       height: 23px;
+       width: 50px;
+       text-align: center;
+       color: #FFF;
+       background: #483D8B;
+       padding: 0;
+       border: 2px solid #8A2BE2;
+       border-radius: 3px;
+       border: 1px solid #07121b;
+       box-shadow: 0px 2px 0px #07121b;
+       text-shadow: 1px 1px 1px #07121b;
+       cursor: pointer;
   }
-     
+  
    #subutton:active {
      position: relative;
      top: 5px;
      box-shadow: none !important;
      transition: All 250ms ease;
 }
-
-   #email, #password, #lname, #fname, #number, #cname, #bday {
-      border: 1px solid black;
-      border-radius: 3px;
-      height: 25px;
-}
-  
+ 
   input#subutton:hover {
      background-color: 	#9400D3;
      color: white;
@@ -113,7 +109,17 @@
      padding: 0;
      margin: 0;
 }
-/*===============Reg-Form/Info Style sheet=============*/
+
+/*=================Borders of All the Input fields==============*/
+
+   #email, #password, #lname, #fname, #number, #cname, #bday {
+      border: 1px solid black;
+      border-radius: 3px;
+      height: 25px;
+}
+
+
+/*===============Registration Form/Info Style sheet=============*/
 
    .optional, label, td {
       font-family: Helvetica, Arial, sans-serif;
@@ -148,7 +154,7 @@
 @media(max-width:700px) {
   .info, .reg-form, .footer, .header, .email, .password, .submit {
                                      width: 100%;
-                                     height: auto;
+                                     heigth: auto;
      }
 }
 
@@ -214,7 +220,7 @@
                Password:<br>
                <input type="password" id="password" "name="password" value="">
              </div>
-            <div class="submit"><br>
+            <div class="submit">
                <input type="submit" id="subutton" value="log In">
             </div>
 
