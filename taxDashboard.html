@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Tax Management Dashboard</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+
+    <style>
+
+    * {
+       box-sizing: border-box;
+ }  
+   .overall {
+       display: flex;
+       flex-wrap: wrap;
+}   
+   .container1 {
+      flex: 20%;
+      background-color: #004655;
+      color: #fff;
+      text-align: center;
+      height: 580px;
+      width: 20%;
+ }
+   .admin {
+     font-size: 20px;
+     font-weight: normal;
+     padding: 13px;
+     border: 1.8px solid #152036;
+     border-radius: 3px;
+ }
+    .empty, .empty1 {
+       border: 1.8px solid #152036;
+       border-radius: 5px;
+       color: #fff;   
+ }
+
+   div.empty:hover, div.empty1:hover, div.admin:hover {
+     background-color: #152036;
+     border: 1px solid #111;
+     color:#FFF;
+     cursor: pointer;
+ }
+
+  div.empty:active, div.empty1:active, div.admin:active {
+     position: relative;
+     top: 5px;
+     box-shadow: none !important;
+     transition: All 250ms ease;
+}
+  
+   .container2 {
+      flex: 80%;
+      background: #fff;
+      color: black;
+      font-family: Helvetica, Arial, sans-serif;
+      height: 580px;
+      padding: 0;
+      width: 80%;
+  }
+    .dashb {
+       background-color: #152036;
+       padding: 20px;
+       border: 1.8px solid #152036;
+       border-radius: 3px;
+       color: #fff;
+       font-size: 16px;   
+  }
+   
+   div.dashb:hover {
+     background: #eee;
+     border: 1px solid #111;
+     color:#1c1c1c;
+ }
+
+    .amount, .option, .submit, .tax {
+       padding: 20px;
+ }
+
+   h3 {
+    font-weight: normal;
+    font-size: 20px;
+ }  
+     
+   label {
+       font-size: 17px;
+       font-weight: 600;
+       padding-right: 5px;
+ }
+    select {
+       border: 1px solid black;
+       border-radius: 3px;
+       height: 25px;
+ }
+    option {
+     font-weight: lighter;
+  }
+
+    #gradient {
+        background: linear-gradient(to right, #eee, #fff);
+        height: 450px;
+  }   
+
+   #numb, #tax {
+      border: 1px solid black;
+      border-radius: 3px;
+      height: 25px;
+ }
+
+   
+   #button {
+       font-size: 20px;
+       display: inline-block;
+       width: 120px;
+       height: 45px;
+       text-align: center;
+       color: #FFF;
+       background: #152036;
+       padding-left: 0;
+       border: 2px solid #1976D2;
+       border-radius: 3px;
+       margin: 3px 5px 3px 0;
+       border: 1px solid #07121b;
+       box-shadow: 0px 2px 0px #07121b;
+       text-shadow: 1px 1px 1px #07121b;
+       cursor: pointer;
+  }
+     
+   #button:active {
+     position: relative;
+     top: 5px;
+     box-shadow: none !important;
+     transition: All 250ms ease;
+}
+   
+  input#button:hover {
+     background-color: #32325d;
+     color: white;
+     border: 1px solid #111;
+ }
+  
+    /* Use a media query to add a break point at 600px*/ 
+@media(max-width:600px) {
+  .container1, .container2 {
+          flex: 100%;
+          max-width: 100%;
+     }
+}
+
+  .footer {
+      width: 100%;
+      padding: 10px;
+      text-align: center;
+      background-color: #152036;
+      color: white;
+      font-size: 16px;
+      font-family: Helvetica, verdana, sans-serif;
+}  
+    </style>
+
+    </head>
+    <body>
+       <div class="overall">
+        <div class="container1">
+           <div class="admin">
+               <h2>Tax Admin<h2>
+            </div>
+            
+            <div class="empty">
+             <p><h3>Profile<h3></p>
+            </div>
+            <div class="empty1">
+               <p><h3>Settings<h3></p>
+            </div>
+        </div>
+     
+      <div class="container2">     
+       <div class="dashb">
+         <h2>Dashboard<h2>
+        </div> 
+         <div id="gradient"> 
+           <div class="amount"> 
+             <h3>Please Enter Income Amount:</h3>
+             <input type="number" name="numb" id="numb" value="">
+            </div>
+             <div class="option">
+              <label for="duration">Period</label>
+              <select>
+                  <option value="Monthly">Monthly</option>
+                  <option value="Quaterly">Quarterly</option>
+                  <option value="Annually">Annually</option>
+              </select>   
+             </div>
+           <br><br>
+          <div class="submit">
+            <input type="submit" id="button" value="Submit">
+          </div>
+          <div class="tax">
+            <label for="tax">Your Monthly Income tax is:</label>
+            <input type="text" name="income" id="tax" value="">
+          </div>
+         </div>
+       </div>
+     </div>
+       <div class="footer">
+         <p>&#169; Copyright Projaro Weekend Cohort. All Rights Reserved</p>
+      </div>
+  </body>
+</html>
