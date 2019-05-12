@@ -21,13 +21,30 @@
 // }
 // console.log(num1);
 
-let age =10;
-if(age>18){
-    console.log('welcome');
+// let age = 10;
+// if (age > 18) {
+//     console.log('welcome');
     
-}else{
-    console.log('Go away');
+// }else{
+//     console.log('Go away');
     
+// }
+
+let fruit = ["orange"];
+
+switch(fruit) {
+    case "orange":
+    console.log("It has vitamin C. love it");
+    break;
+    case "papaw":
+    console.log("It helps cases of cancer, eat it");
+    break;
+    case "apple":
+    console.log("It keeps the doctor away, eat it");
+    break;
+    case "pears":
+    console.log("It tasteless, I don't like it");
+    break;
+    default:
+    console.log("Invalid input");
 }
-
-
