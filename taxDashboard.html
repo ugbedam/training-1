@@ -54,7 +54,7 @@
       flex: 80%;
       background: #fff;
       color: black;
-      font-family: Helvetica, Arial, sans-serif;
+      font-family: Georgia;
       height: 580px;
       padding: 0;
       width: 80%;
@@ -79,8 +79,8 @@
  }
 
    h3 {
-    font-weight: normal;
-    font-size: 20px;
+    font-weight: 600;
+    font-size: 17px;
  }  
      
    label {
@@ -93,7 +93,7 @@
        border-radius: 3px;
        height: 25px;
  }
-    option {
+    period {
      font-weight: lighter;
   }
 
@@ -181,10 +181,20 @@
         </div> 
          <div id="gradient"> 
            <div class="amount"> 
+              <form>
+                  <h3>Tax Type:</h3>
+                  <input type="radio" name="taxType" class="radio" checked>Personal Income Tax
+                  <input type="radio" name="taxType" class="radio">Company Income Tax
+                  <input type="radio" name="taxType" class="radio">Petroleum Profit Tax
+                  <br>
+                  <h3>Employment Status:</h3>
+                  <input type="radio" name="empStatus" class="radio"checked>Employed
+                  <input type="radio" name="empStatus" class="radio">Self Employed
+               </form> 
              <h3>Enter Basic Salary:</h3>
              <input type="number" name="numb" id="numb" value="">
             </div>
-             <div class="option">
+             <div class="period">
               <label for="duration">Pay Period</label>
               <select>
                   <option value="Monthly">Monthly</option>
